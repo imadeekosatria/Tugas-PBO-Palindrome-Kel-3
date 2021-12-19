@@ -1,13 +1,13 @@
 public class KataKerja extends Kata {
 	//--------------- PRIVATE -----------------//
-	private boolean isKataKasar;
+	private boolean isKataKerja;
 	
-	/* IS kata kasar
+	/* IS kata kerja
 	 * @param str
 	 * 
 	 * memeriksa apakah kata
 	 * yang di passing adalah
-	 * kata kasar atau bukan.
+	 * kata kerja atau bukan.
 	 * */
 	private boolean isKataKerja (String str) {
 		boolean result;
@@ -41,10 +41,10 @@ public class KataKerja extends Kata {
 		str = this.isKalimat ? extractKata(str) : str;
 
 		
-		boolean state = this.isKataKasar;
+		boolean state = this.isKataKerja;
 		
 		if ( isKataKerja(str) ) {
-			this.isKataKasar = true;
+			this.isKataKerja = true;
 			System.out.printf("Input \"%s\" termasuk kata kerja dasar\n", str);
 		} else {
 			System.out.printf("Input \"%s\" tidak ada di dalam data\n", str);
